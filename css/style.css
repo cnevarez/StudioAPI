@@ -1,0 +1,23 @@
+.php {
+	color: #F00;
+}
+.comment {
+	color: #F96;
+}
+.variable {
+	color: #39F;
+}
+.string {
+	color: #C00;
+}
+.echo {
+	color: #690;
+}
+#code{
+	border:medium;
+	 background-color:#E1E1E1;
+	 margin:auto;
+	 padding-top: 10px;
+	 padding-left: 15px;
+	 padding-bottom: 10px;
+}
