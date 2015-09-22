@@ -1,10 +1,10 @@
 <?php
 
-/*$guid = $_GET['guid'];
+$guid = $_GET['guid'];
 $pass = $_GET['pass'];
 $email= $_GET['email'];
 $mfpass = $_GET['mfpass'];
-$accid = $_GET['accid'];*/
+$accid = $_GET['accid'];
 //Load the function to call the API
 function callService($endpoint, $request)
 {
@@ -27,11 +27,11 @@ function callService($endpoint, $request)
 //creating the request object for "Authenticate" method
 $authRequest = array
 (
-   "SelectedAccountID" =>1443,
-	"Email" => "cnevarez@mindfireinc.com",
-	"Password" => "MindFire2014!",
-	"PartnerGuid" => "ChrisNevarezAPIUser",
-	"PartnerPassword" => "0af624d3955341bcae136a90994b9c74"
+   "SelectedAccountID" => $accid,
+	"Email" => "$email",
+    "Password" => "$mfpass",
+    "PartnerGuid" => "$guid",
+    "PartnerPassword" => "$pass"
 );
 
 //This should be always the first call to get a ticket and use it in all other methods.
